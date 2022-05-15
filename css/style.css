@@ -144,6 +144,22 @@ main h1 {
     margin: 1.8rem 0.6rem 3.12rem 9rem;
 }
 
+.imagenMuestra:hover{
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-image: linear-gradient(to bottom,#c7c0c0,black);
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
 .imagenMuestra img {
     padding: 0.9rem 0.6rem 0.6rem 1.5rem;
 }
@@ -155,6 +171,13 @@ main h1 {
     height: 12.5rem;
     border-radius: 0.5rem;
     margin: 30px 0 3.12rem  140px;
+}
+
+.imagenMuestraDos:hover{
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-image: linear-gradient(to bottom,#c7c0c0,black);
 }
 
 .imagenMuestraDos img {
@@ -170,6 +193,10 @@ main h1 {
 .reservar {
     text-align: center;
     margin: 0.9rem 0 0 0;
+}
+
+.reservar:hover{
+    transform: scale(2,2);
 }
 
 .colorSecundario {
@@ -376,6 +403,12 @@ footer {
     width: 31.2rem;
     margin: 0 0 0 6.2rem;
 }
+
+.primerPublicacion:hover{
+    transform: scale(1.2,1.2);
+    margin: 2rem 0 5rem 6.2rem;
+}
+
 .primerPublicacion h2 {
     font-family: 'Gentium Book Basic', serif;
     font-size: 1.8rem;
@@ -391,6 +424,7 @@ footer {
     width: 18.7rem;
     height: 12.8rem;
     border-radius: 0.5rem;
+    margin: 1rem 0 0 0;
 }
 
 .primerPublicacion img {
@@ -402,6 +436,11 @@ footer {
     width: 35rem;
     padding: 0 4.3rem 0 0;
    
+}
+
+.segundaPublicacion:hover{
+    transform: scale(1.2,1.2);
+    margin:2rem 0 2rem 5rem ;
 }
 
 .segundaPublicacion h2 {
@@ -438,6 +477,11 @@ footer {
     padding:  0 0 0 9.5rem;
 }
 
+.terceraPublicacion:hover{
+    transform: scale(1.2,1.2);
+    margin: 3rem 0 3rem 0;
+}
+
 .terceraPublicacion h3 {
     font-family: 'Gentium Book Basic', serif;
     font-size: 1.8rem;
@@ -464,6 +508,11 @@ footer {
 .cuartaPublicacion {
     width: 25rem;
     padding:  0 0 0 3.1rem;
+}
+
+.cuartaPublicacion:hover{
+    transform: scale(1.2,1.2);
+    margin: 3rem 0 3rem 4rem;
 }
 
 .cuartaPublicacion h3 {
