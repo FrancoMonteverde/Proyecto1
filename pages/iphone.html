@@ -5,28 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de css bbootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Iphone</title>
     <link rel="stylesheet" href="../css/style.css">
-
-    <!--Enlaces de tipografia-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
-
 
 </head>
 
 <body>
 
-    <header class=header>
+    <header class="header">
 
         <nav>
 
@@ -58,158 +49,166 @@
 
     </header>
 
-    <main class="mainIphone">
+    <div class="containerFluid">
+        <main class="mainIphone">
 
-        <h1>
-            Encuentra el iphone perfecto para ti.
-        </h1>
+            <h1 class="m-auto my-5">
+                Encuentra el iphone perfecto para ti.
+            </h1>
 
-    </main>
+        </main>
 
-    <!--Iphone 13-->
+        <!--Iphone 13-->
 
-    <div class="padreGridsIphone">
 
-        <div class="primerPublicacion">
-            <h2>
+        <div class="row">
+            <div class="col-5 m-auto">
+                <h2>
 
-                Iphone 13:
+                    Iphone 13:
 
-            </h2>
-            <p>
-                Un sistema de cámaras mucho más poderoso. Una pantalla con respuesta inmediata en cada interacción. El
-                chip de
-                smartphone más rápido del mundo. Un diseño increíblemente resistente. Y un gran salto en duración de
-                batería.
-                Saca tu lado Pro.
-            </p>
-            <div class="fondoPublicaciones">
+                </h2>
+                <p class="lead">
+                    Un sistema de cámaras mucho más poderoso. Una pantalla con respuesta inmediata en cada interacción.
+                    El
+                    chip de
+                    smartphone más rápido del mundo. Un diseño increíblemente resistente. Y un gran salto en duración de
+                    batería.
+                    Saca tu lado Pro.
+                </p>
 
-                <img src="../img/iphone13.jpg" alt="imagen">
+                <div>
+                    <img src="../img/iphone13.jpg" class="img-fluid rounded float-start" alt="imagen">
+                </div>
 
-                <input type="submit" value="Comprar">
+                <div>
+                    <input class="mx-3" type="submit" value="Comprar">
+                </div>
+
+            </div>
+
+            <!--Iphone 12-->
+            <div class="col-5 m-auto my-5">
+
+                <h2>
+
+                    Iphone 12:
+
+                </h2>
+                <p class="lead">
+                    La pantalla del iPhone 12 tiene esquinas redondeadas que siguen el elegante diseño curvo del
+                    teléfono, y
+                    las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo
+                    estándar,
+                    la pantalla tiene 6.06 pulgadas en diagonal (el área real de visualización es menor).
+                </p>
+
+                <img src="../img/iphone12.jpg" class="img-fluid rounded float-start" alt="imagen">
+
+                <div class=" my-2">
+                    <input class="mx-3" type="submit" value="Comprar">
+                </div>
 
             </div>
         </div>
 
-        <!--Iphone 12-->
-        <div class="segundaPublicacion">
+        <div class="row">
+            <!--Iphone 11 pro max-->
 
-            <h2>
+            <div class="col-5 m-auto">
 
-                Iphone 12:
+                <h3>
 
-            </h2>
-            <p>
-                La pantalla del iPhone 12 tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y
-                las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar,
-                la pantalla tiene 6.06 pulgadas en diagonal (el área real de visualización es menor).
-            </p>
-            <div class="fondoPublicacionesDos">
+                    Iphone 11 pro max:
 
-                <img src="../img/iphone12.jpg" alt="imagen">
+                </h3>
+                <p class="lead">
 
-                <input type="submit" value="Comprar">
+                    el iPhone 11 pro max se encuentra en su precio más bajo desde que salió en el 2019. A pesar de
+                    tener
+                    un
+                    tiempo,
+                    el iPhone 11 sigue igual de rápido y competitivo si se le compara a otros celulares.
+                </p>
+                <div class="fondoPublicacionesTres">
 
+                    <img src="../img/iphone11.jfif" class="img-fluid rounded float-start" alt="imagen" alt="imagen">
+
+                    <div>
+                        <input class="mx-3" type="submit" value="Comprar">
+                    </div>
+
+                </div>
             </div>
 
-        </div>
+            <!--Iphone 11-->
+            <div class="col-5 m-auto">
 
-        <!--Iphone 11 pro max-->
+                <h3>
 
-        <div class="terceraPublicacion">
+                    Iphone 11:
 
-            <h3>
+                </h3>
+                <p class="lead">
+                    Phone 11 brinda un nuevo sistema de dos cámaras. Batería para todo el día. El superpotente chip
+                    A13
+                    Bionic. Y una parte posterior de vidrio ultrarresistente, incluso a los rayones.
+                </p>
+                <div class="fondoPublicacionesCuatro">
 
-                Iphone 11 pro max:
+                    <img src="../img/iphone11dos.jfif" class="img-fluid rounded float-start" alt="imagen" alt="imagen">
 
-            </h3>
-            <p>
+                    <div>
+                        <input class="mx-3" type="submit" value="Comprar">
+                    </div>
 
-                el iPhone 11 pro max se encuentra en su precio más bajo desde que salió en el 2019. A pesar de tener un
-                tiempo,
-                el iPhone 11 sigue igual de rápido y competitivo si se le compara a otros celulares.
-            </p>
-            <div class="fondoPublicacionesTres">
 
-                <img src="../img/iphone11.jfif" alt="imagen">
-                <input type="submit" value="Comprar">
-
-            </div>
-        </div>
-
-        <!--Iphone 11-->
-        <div class="cuartaPublicacion">
-
-            <h3>
-
-                Iphone 11:
-
-            </h3>
-            <p>
-                Phone 11 brinda un nuevo sistema de dos cámaras. Batería para todo el día. El superpotente chip A13
-                Bionic. Y una parte posterior de vidrio ultrarresistente, incluso a los rayones.
-            </p>
-            <div class="fondoPublicacionesCuatro">
-
-                <img src="../img/iphone11dos.jfif" alt="imagen">
-                <input type="submit" value="Comprar">
+                </div>
 
             </div>
-
         </div>
 
-        <div class="accesibilidadIphone">
+        <div class="containerFluid">
 
-            <h5>
+            <h5 class="mx-5 my-3">
                 Accecibilidad:
             </h5>
 
-        </div>
-        <div class="padreAccesibilidadParrafo">
-
-            <div class="accesibilidadIphoneParrafo">
-                <p>
-                    Las funcionalidades de accesibilidad integradas para personas con dificultades visuales, motrices,
+            <div class="row">
+                <p class=" col-6 mx-5 lead">
+                    Las funcionalidades de accesibilidad integradas para personas con dificultades visuales,
+                    motrices,
                     auditivas y cognitivas te ayudan a aprovechar al máximo tu iPhone.
                 </p>
 
             </div>
-            <div class="bloqueItems">
 
-                <div class="columnasIphone">
-                    <ul>
-                        <li>VoiOver</li>
-                        <li>Zoom</li>
-                        <li>Lupa</li>
-                    </ul>
 
-                </div>
-                <div class="columnasIphone">
-                    <ul>
-                        <li>Dictado</li>
-                        <li>Control por botón</li>
-                        <li>Subtitulos opcionales</li>
+            <div class="row">
+                <ul class=" col-3 mx-5 lead">
+                    <li>VoiOver</li>
+                    <li>Zoom</li>
+                    <li>Lupa</li>
+                </ul>
 
-                    </ul>
+                <ul class=" col-3 lead">
+                    <li>Dictado</li>
+                    <li>Control por botón</li>
+                    <li>Subtitulos opcionales</li>
+                </ul>
 
-                </div>
-                <div class="columnasIphone">
-                    <ul>
-                        <li>AssistiveTouch</li>
-                        <li>Contenido Leído</li>
-                        <li>Toque posterior</li>
-                    </ul>
-
-                </div>
-
+                <ul class="col-3 lead">
+                    <li>AssistiveTouch</li>
+                    <li>Contenido Leído</li>
+                    <li>Toque posterior</li>
+                </ul>
             </div>
-
         </div>
 
-        <footer>
 
-            <p>
+        <footer class="p--1">
+
+            <p class="">
                 Reservado todos los derechos.No se permite la reproducciòn total o parcial de este sitio
             <div>
                 Creado por <strong>Monteverde Franco</strong>
@@ -218,10 +217,12 @@
 
         </footer>
     </div>
-    
+
     <div class="fixed">
         <img src="../img/instagram.png" alt="img">
     </div>
+
+
 </body>
 
 </html>
