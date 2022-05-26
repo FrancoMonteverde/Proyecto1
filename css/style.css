@@ -113,11 +113,13 @@ header {
     font-family: 'Square Peg', cursive;
 }
 
+
 main h1 {
     text-align: center;
     font-family: 'PT Serif', serif;
     color: #777474;
     font-size: 3.1rem;
+    margin: 0 0 1rem 0;
 }
 
 .subTitulo {
@@ -141,7 +143,7 @@ main h1 {
     width: 21.8rem;
     height: 12.5rem;
     border-radius: 0.5rem;
-    margin: 1.8rem 0.6rem 3.12rem 9rem;
+    margin: 4% 30% 10% 30%;
 }
 
 .imagenMuestra:hover{
@@ -170,7 +172,7 @@ main h1 {
     width: 21.8rem;
     height: 12.5rem;
     border-radius: 0.5rem;
-    margin: 30px 0 3.12rem  140px;
+    margin: 4% 50% 10% 0;
 }
 
 .imagenMuestraDos:hover{
@@ -187,7 +189,7 @@ main h1 {
 .parrafoIndex p {
     font-size: 1.5rem;
     margin: 0 1.25rem 0 1.25rem;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .reservar {
@@ -195,9 +197,6 @@ main h1 {
     margin: 0.9rem 0 0 0;
 }
 
-.reservar:hover{
-    transform: scale(2,2);
-}
 
 .colorSecundario {
     background-color: white;
@@ -227,18 +226,20 @@ main h1 {
     margin: 2rem;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .subTituloTres {
     margin: 0 0 0 2rem;
+    padding: 2% 0 0 0;
     font-size: 2.5rem;
     color: #a7267c;
 }
 
 .parrafoIndexCinco {
     margin: 0.5rem 0 4.3rem 0.6rem;
-    width: 56.25rem;
+    width: 100%;
+    padding: 2% 1% 0 1%;
     font-size: 25px;
     font-family: 'PT Sans', sans-serif;
     color: white;
@@ -254,24 +255,27 @@ main h1 {
 
 .parrafoAcc p {
     font-size: 25px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .parrafoClima p {
     font-size: 25px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
-
 footer {
-    background-color: white;
+    background-color: black;
+    height: 1%;
     margin: 100px 0 0 0;
     text-align: center;
 }
 
+footer p{
+    padding: 1% 0 0 0;
+}
+
 .fondoIcloud {
     background-color: rgb(41, 39, 39);
-    height: 200px;
-    margin: 0 0 80px 0;
+    height: 90%
 }
 
 .fixed {
@@ -284,336 +288,210 @@ footer {
     width: 50px;
 }  
 
-@media screen and (max-width:768px) {
- 
+@media screen and (max-width: 1024px){
+    
+    .imagenMuestra{
+        margin: 4% 0 10% 10%; 
+    }
+    .imagenMuestraDos{
+        margin: 4% 0 10% 0;
+    }
+}
+
+@media screen and (max-width:1000px){
+
     .padreGridsIndex {
         display: grid;
         column-gap: 10rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(7, fr);
-        grid-template-areas: " subTitulo subTitulo subTitulo subTitulo"
-                             "  imgMu  imgMu imgMu  imgMu "
+        grid-template-rows: repeat(9, fr);
+        grid-template-areas: "subTitulo subTitulo subTitulo subTitulo"
+                             "imgMu  imgMu imgMu  imgMu"
                              "imgMuDos imgMuDos imgMuDos imgMuDos"
-                             " parrIn parrIn parrIn parrIn"
-                             " secDIn secDIn secDIn secDIn"
-                             " fonIclou fonIclou fonIclou fonIclou"
-                             " padreAcc padreAcc padreAcc padreAcc"
+                             "parrIn parrIn parrIn parrIn"
+                             "secDIn secDIn secDIn secDIn"
+                             "fonIclou fonIclou fonIclou fonIclou"
+                             "padreAcc padreAcc padreAcc padreAcc"
                              "padreCli padreCli padreCli padreCli"
-                             " footer footer footer footer";
+                             "footer footer footer footer";
     }
-    
-    .subTitulo {
-        grid-area: subTitulo;
-    }
-    
-    .imagenMuestra {
-        grid-area: imgMu;
-    }
-    
-    .imagenMuestraDos {
-        grid-area: imgMuDos;
-    }
-    
-    .parrafoIndex {
-        grid-area: parrIn;
-    }
-    
-    .sectionDosIndex {
-        grid-area: secDIn;
-    }
-    
-    .fondoIcloud {
-        grid-area: fonIclou;
-        width: 100%;
-        height: 250px;
-    }
-    
-    .padreAccesibilidad {
-        grid-area: padreAcc;
-        padding: 2.5rem;
-        height: 30rem;
-    }
-    
-    .padreClima {
-        grid-area: padreCli;
-        padding: 2.5rem;
-    }
-    
-    footer {
-        grid-area: footer;
+
+    .fondoIcloud{
+        height: 90%;
     }
 
     .parrafoIndexCinco{
-        width: 98%;
+        padding: 0 1% 2% 0;
     }
-    
+    .imagenMuestra{
+        margin:  5% auto;
+    }
+    .imagenMuestraDos{
+        margin: 5% auto;
+    }
+    .parrafoIndex{
+        margin: 0 0 0 5%;
+    }
+
 }
 
 /*Css de Iphone*/
 
 .padreGridsIphone {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     height: 100vh;
     row-gap: 3.1rem;
-    grid-template-areas: " priPu priPu  segPu segPu"
-                         " terPu terPu  cuarPu cuarPu"
-                         " accIpho  accIpho  pAccPar  pAccPar"
-                         " footer footer footer footer";
+    grid-template-areas: " priPu segPu"
+                         " terPu cuarPu"
+                         " accIpho pAccPar"
+                         " footer  footer";
 }
 
-.primerPublicacion {
-    grid-area: priPu;
+.mainIphone h1{
+margin: 0 0 6rem 0;
 }
 
-.segundaPublicacion {
-    grid-area: segPu;
+.primerPublicacion{
+    margin: 0 0 0 25%;
 }
 
-.terceraPublicacion {
-    grid-area: terPu;
+.primerPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
 }
 
-.cuartaPublicacion {
-    grid-area: cuarPu;
+.primerPublicacion img{
+    padding: 0.75rem 0 0 1.25rem;
 }
 
-.accesibilidadIphone {
-    grid-area: accIpho;
+.fondoPublicaciones{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
 }
 
-.padreAccesibilidadParrafo {
-    grid-area: pAccPar;
+.segundaPublicacion{
+    margin: 0 0 0 25%;
+ 
 }
 
-footer {
-    grid-area: footer;
-}
-
-/*Fin de Grids*/
-
-.mainIphone h1 {
-    font-family: 'PT Serif', serif;
-    margin: 0 0 3rem 0;
+.segundaPublicacion p{
+    width: 74%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
 }
 
 
-.primerPublicacion {
-    width: 31.2rem;
-    margin: 0 0 0 6.2rem;
+.segundaPublicacion img{
+    padding: 0.5rem 0 0 1.7rem;
 }
 
-.primerPublicacion:hover{
-    transform: scale(1.2,1.2);
-    margin: 2rem 0 5rem 6.2rem;
+.fondoPublicacionesDos{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
 }
 
-.primerPublicacion h2 {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 1.8rem;
+.terceraPublicacion{
+    margin: 0 0 0 25%;
 }
 
-.primerPublicacion p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5rem;
+.terceraPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
 }
 
-.fondoPublicaciones {
-    background-color: rgb(41, 39, 39);
-    width: 18.7rem;
-    height: 12.8rem;
-    border-radius: 0.5rem;
+.terceraPublicacion img{
+    padding: 0.7rem 0 0 1.3rem;
+}
+
+.fondoPublicacionesTres{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 13.5rem;
+    height: 14.5rem;
+    border-radius: 1rem;
+}
+
+.cuartaPublicacion{
+    margin: 0 0 0 25%;
+}
+
+.cuartaPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+.cuartaPublicacion img{
+    padding: 0.7rem 0 0 1.3rem;
+}
+
+.fondoPublicacionesCuatro{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 13.5rem;
+    height: 14.5rem;
+    border-radius: 1rem;
+}
+
+.comprar{
     margin: 1rem 0 0 0;
+
 }
 
-.primerPublicacion img {
-    padding: 0.6rem 0 0.6rem 0.7rem;
-    width: 18.1rem;
+.accesibilidadIphone h5{
+    text-align: center;
+    margin: 5rem 0 ;
+    font-size: 2rem;
 }
 
-.segundaPublicacion {
-    width: 35rem;
-    padding: 0 4.3rem 0 0;
-   
-}
-
-.segundaPublicacion:hover{
-    transform: scale(1.2,1.2);
-    margin:2rem 0 2rem 5rem ;
-}
-
-.segundaPublicacion h2 {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 1.8rem;
-}
-
-.segundaPublicacion p {
-    font-family: 'PT Sans', sans-serif;
+.accesibilidadIphoneParrafo{
+    font-family: 'Roboto Flex', sans-serif;
     font-size: 1.5rem;
-    margin: 0.6rem 0 0.9rem 0;
-}
-
-.segundaPublicacion img {
-    padding: 0.6rem 0.3rem 0.6rem 1rem;
-    width: 17.5rem;
-}
-
-.fondoPublicacionesDos {
-    background-color: rgb(41, 39, 39);
-    width: 18.1rem;
-    height: 13.3rem;
-    border-radius: 0.5rem;
-}
-
-.padreSegundasDos {
-    display: flex;
-    margin: 5.6rem 0 0 0;
-    justify-content: space-around;
-}
-
-.terceraPublicacion {
-    width: 28.1rem;
-    padding:  0 0 0 9.5rem;
-}
-
-.terceraPublicacion:hover{
-    transform: scale(1.2,1.2);
-    margin: 3rem 0 3rem 0;
-}
-
-.terceraPublicacion h3 {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 1.8rem;
-}
-
-.terceraPublicacion p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.6rem 0 1.2rem -3.5rem;
-}
-
-.terceraPublicacion img {
-    padding: 0.4rem 0 0 1.18rem;
-}
-
-.fondoPublicacionesTres {
-    background-color: rgb(41, 39, 39);
-    width: 13.1rem;
-    height: 13.7rem;
-    border-radius: 0.5rem;
-    margin: 3.1rem 0 0 0;
-}
-
-.cuartaPublicacion {
-    width: 25rem;
-    padding:  0 0 0 3.1rem;
-}
-
-.cuartaPublicacion:hover{
-    transform: scale(1.2,1.2);
-    margin: 3rem 0 3rem 4rem;
-}
-
-.cuartaPublicacion h3 {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 1.8rem;
-}
-
-.cuartaPublicacion p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5rem;
-    margin: 0.6rem 0 0.9rem -3.1rem;
-}
-
-.fondoPublicacionesCuatro {
-    margin: 2.5rem 0 0 0;
-    background-color: rgb(41, 39, 39);
-    width: 13.12rem;
-    height: 13.7rem;
-    border-radius: 0.5rem;
-}
-
-.fondoPublicacionesCuatro img {
-    padding: 0.2rem 0 0 1.18rem;
-}
-
-.accesibilidadIphone {
-    margin: 3.7rem 0 0 4.5rem;
-}
-
-.accesibilidadIphone h5 {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5rem;
-}
-
-.accesibilidadIphoneParrafo {
-    width: 37rem;
-    margin: 1.8rem 0 0 0;
-    padding: 0;
+    padding: 0 1.2rem 0 1.2rem;
 }
 
 .bloqueItems{
     display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+    font-family: 'Roboto Flex', sans-serif;
+    
 }
 
-.accesibilidadIphoneParrafo p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.2rem;
+.columnasIphone li{
+  font-size: 1.3rem;
 }
 
-.columnasIphone ul li {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 0.9rem;
-    margin: 1rem 4rem 0 0;
-}
+@media screen and (max-width:1024px) {
 
-@media screen and (max-width:768px) {
     .padreGridsIphone {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(7, 1fr);
+        height: 100vh;
         row-gap: 3.1rem;
-        grid-template-areas: " priPu priPu priPu priPu"
-                             " segPu segPu segPu segPu"
-                             " terPu terPu terPu terPu"
-                             " cuarPu cuarPu cuarPu cuarPu"
-                             " accIpho accIpho accIpho accIpho"
-                             " pAccPar pAccPar pAccPar pAccPar"
-                             " footer footer footer footer";
-    }
-    .primerPublicacion {
-        grid-area: priPu;
-        margin: 0 0 0 6.2rem;
-    } 
-    .segundaPublicacion {
-        grid-area: segPu;
-        margin: 0 0 0 6.2rem;
-    }
-    .terceraPublicacion {
-        grid-area: terPu;
-        margin: 0 0 0 0;
-        padding: 0 0 0 9.5rem;
-    }
-    .cuartaPublicacion {
-        grid-area: cuarPu;
-        margin: 0 0 0 6.2rem;
-    }
-    .accesibilidadIphone {
-        grid-area: accIpho;
-    }
-    .padreAccesibilidadParrafo {
-        grid-area: pAccPar;
-        padding: 0 0 0 2rem;
-    }
-    footer {
-        grid-area: footer;
+        grid-template-areas: "priPu"
+                             "segPu"
+                             "terPu"
+                             "cuarPu"
+                             "accIpho"
+                             "pAccPar"
+                             "footer";
     }
 
-    .bloqueItems{
-        padding: 2rem;
+    .accesibilidadIphoneParrafo p{
+        padding: 0 1rem;
     }
-    
+
 }
 
 /*Ipad*/
